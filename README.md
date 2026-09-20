@@ -11,6 +11,7 @@ MDBD/
 ├── Atividade1 br_modelo/        # 10 exercícios de modelo lógico no brModelo (.brM3)
 ├── Atividade 2/                 # Diagrama, modelo e dump SQL iniciais do banco `escola`
 ├── Banco de Dados Escola/       # Evolução do banco `escola` (versões 1.0.0 e 1.0.1)
+├── Dicionario de Dados/         # Dicionário de dados do banco `escola` documentado em PDF
 └── README.md
 ```
 
@@ -19,6 +20,7 @@ MDBD/
 - **Banco de Dados Escola/** — evolução do banco `escola`:
   - `escola.sql (1.0.0)` — versão inicial, com tabelas de associação extras (`alunos_cursos`, `alunos_turmas_cursos`) e diversas views de relatório.
   - `escola.sql (1.0.1)` — versão revisada, com a tabela `professores_disciplinas` consolidada e a adição do campo `status` (ativo/inativo) na tabela `alunos`.
+- **Dicionário de Dados/** — contém a documentação da estrutura do banco escola, detalhando os campos, restrições, chaves e finalidades de cada tabela no arquivo Dicionario_de_Dados_App_Scholar.pdf.
 
 ## Tecnologias utilizadas
 
