@@ -2,25 +2,29 @@
 
 ## Sobre o repositório
 
-Este repositório reúne as atividades da disciplina de Modelagem de Banco de Dados, do curso técnico em Desenvolvimento de Sistemas (Etec, unidade São José dos Campos). As atividades vão desde exercícios de modelo lógico até o desenvolvimento completo do banco de dados `escola`.
+Este repositório reúne as atividades da disciplina de Modelagem de Banco de Dados, do curso técnico em Desenvolvimento de Sistemas (Etec, unidade São José dos Campos). As atividades vão desde exercícios de modelo lógico até o desenvolvimento completo do banco de dados `escola`, com seu diagrama, scripts SQL e dicionário de dados.
 
 ## Estrutura do repositório
 
 ```
 MDBD/
-├── Atividade1 br_modelo/        # 10 exercícios de modelo lógico no brModelo (.brM3)
-├── Atividade 2/                 # Diagrama, modelo e dump SQL iniciais do banco `escola`
-├── Banco de Dados Escola/       # Evolução do banco `escola` (versões 1.0.0 e 1.0.1)
-├── Dicionario de Dados/         # Dicionário de dados do banco `escola` documentado em PDF
+├── Atividade1 br_modelo/                      # 10 exercícios de modelo lógico no brModelo (.brM3)
+├── Atividade 2/                               # Diagrama, modelo e dump SQL iniciais do banco `escola`
+├── Banco de Dados Escola/                     # Evolução do banco `escola` (versões 1.0.0 e 1.0.1)
+├── Sistema de Gerenciamento de Biblioteca/    # Dicionário de dados do banco `escola` (PDF)
 └── README.md
 ```
 
 - **Atividade1 br_modelo/** — 10 modelos lógicos (`Lógico_1.brM3` a `Lógico_10.brM3`) criados na ferramenta brModelo.
-- **Atividade 2/** — primeira versão do banco `escola`: diagrama em PDF (`Escola DATABASE.pdf`), arquivo de modelagem (`Escola.brM3`) e dump SQL (`escola.sql`).
+- **Atividade 2/** — primeira versão do banco `escola`:
+  - `Escola DATABASE.pdf` — diagrama do banco.
+  - `Escola.brM3` — arquivo de modelagem.
+  - `escola.sql` — dump SQL.
 - **Banco de Dados Escola/** — evolução do banco `escola`:
+  - `Escola.brM3` — modelo atualizado no brModelo.
   - `escola.sql (1.0.0)` — versão inicial, com tabelas de associação extras (`alunos_cursos`, `alunos_turmas_cursos`) e diversas views de relatório.
-  - `escola.sql (1.0.1)` — versão revisada, com a tabela `professores_disciplinas` consolidada e a adição do campo `status` (ativo/inativo) na tabela `alunos`.
-- **Dicionário de Dados/** — contém a documentação da estrutura do banco escola, detalhando os campos, restrições, chaves e finalidades de cada tabela no arquivo Dicionario_de_Dados_App_Scholar.pdf.
+  - `escola.sql (1.0.1)` — versão revisada, com a tabela `professores_disciplinas` consolidada e a adição do campo `status` (ativo/inativo) na tabela `alunos`, definido como `CHAR(1)` com valor padrão `'A'`.
+- **Sistema de Gerenciamento de Biblioteca/** — contém o `Dicionario_de_Dados_App_Scholar.pdf`, que documenta a estrutura do banco `escola`: campos, restrições, chaves e finalidade de cada tabela.
 
 ## Tecnologias utilizadas
 
@@ -30,11 +34,11 @@ MDBD/
 ## Como executar
 
 - **Arquivos `.brM3`**: abrir no brModelo para visualizar ou editar os modelos.
-- **Arquivos `.sql`**: importar via phpMyAdmin, ou executar `mysql -u root -p < escola.sql`, em um servidor MySQL/MariaDB (por exemplo, o do XAMPP).
+- **Arquivos `.sql`**: importar via phpMyAdmin, ou executar `mysql -u root -p < escola.sql`, em um servidor MySQL/MariaDB (por exemplo, o do XAMPP). Para o projeto mais recente, use a versão `1.0.1`.
 
 ## Observação
 
-O banco `escola` criado e evoluído neste repositório é o mesmo consumido pelo projeto **App_Scholar** (React Native/Expo), por meio de uma API em PHP.
+O banco `escola` criado e evoluído neste repositório é o mesmo consumido pelo projeto **App_Scholar** (React Native/Expo), por meio de uma API em PHP. O código do aplicativo está no repositório [PROGRAMACAO-MOBILE](https://github.com/WendersonSousaLeal/PROGRAMACAO-MOBILE), na pasta `app_scholar/`.
 
 ## Autor
 
