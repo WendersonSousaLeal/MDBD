@@ -33,7 +33,7 @@ MDBD/
 ├── Atividade1 br_modelo/                      # 10 exercícios de modelo lógico (.brM3)
 ├── Atividade 2/                               # Primeira versão do banco `escola`
 ├── Banco de Dados Escola/                     # Evolução do banco `escola` (1.0.0 e 1.0.1)
-├── Sistema de Gerenciamento de Biblioteca/    # Dicionário de dados (PDF)
+├── Dicionario de Dados/                       # Dicionário de dados (PDF)
 └── README.md
 ```
 
@@ -42,7 +42,7 @@ MDBD/
 - **Banco de Dados Escola/**: modelo atualizado (`Escola.brM3`) e as versões do script SQL:
   - `1.0.0`: versão inicial, com tabelas de associação extras e views de relatório.
   - `1.0.1`: versão revisada, com a tabela `professores_disciplinas` consolidada e o campo `status` (`CHAR(1)`, padrão `'A'`) na tabela `alunos`.
-- **Sistema de Gerenciamento de Biblioteca/**: `Dicionario_de_Dados_App_Scholar.pdf`, que documenta o banco `escola`.
+- **Dicionario de Dados/**: `Dicionario_de_Dados_App_Scholar.pdf`, que documenta o banco `escola`.
 
 ## Requisitos
 
